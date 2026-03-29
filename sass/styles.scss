@@ -36,9 +36,13 @@ a:hover, a:focus {
   color: $accent-color-hover;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: $sans-serif;
-  font-weight: $light;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
   color: $txt-primary;
   -webkit-text-size-adjust: 100%;
   //fix for iOS
@@ -203,7 +207,15 @@ Navigation
   -webkit-border-radius: 1px;
   border-radius: 1px;
   background: #fff;
-  cursor: pointer
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fixed .nav-toggle span, 
+.fixed .nav-toggle span:before, 
+.fixed .nav-toggle span:after {
+  background: #2c3e50;
+  box-shadow: none;
 }
 .nav-toggle span:before {
   top: -10px
@@ -251,116 +263,198 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-
-  /*.rsvp-btn {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-  }*/
+    min-height: 100vh;
+    background: url('../img/eng_pics/engagement-3.jpg') center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
   .down-arrow a {
-    color: $txt-light;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
   }
-  h1 {
-    color: $txt-light;
-    margin-bottom: 40px;
-  }
-  p.intro {
-    color: $txt-light;
-    font-size: 20px;
+  
+  .hero-date {
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+    font-size: 96px;
     font-weight: 300;
-    margin-bottom: 80px;
+    letter-spacing: 8px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    margin: 0;
+    line-height: 1.1;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 64px;
+      letter-spacing: 4px;
+    }
+    @media (max-width: 480px) {
+      font-size: 48px;
+      letter-spacing: 2px;
+    }
   }
+  
   .hero-content {
-    padding-top: 40%;
-  }
-  .hero-content img {
-    width: 55%;
-    margin-bottom: 12%;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 2;
   }
 }
 .navigation {
   transition: all 300ms ease-in-out;
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 999;
+  background: transparent;
+  padding: 30px 0;
+  top: 0;
 }
+
 .fixed {
-  position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  position: absolute;
+  background-color: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
   z-index: 999;
   width: 100%;
+  padding: 30px 0;
 }
+
 header {
-  padding: 50px 0;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  padding: 0;
+  border-bottom: none;
   position: relative;
   width: 1170px;
+  max-width: 90%;
   margin: 0 auto;
   transition: padding 300ms ease-in-out;
 
   a {
-    color: $txt-light;
-    text-transform: uppercase;
-    font-size: $nav-font-size;
+    color: #fff;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
 
     &.login {
       margin-right: 20px;
     }
   }
-  .logo {
-    display: inline-block;
-  }
-  .logo img {
-    height: 19px;
-  }
+  
   ul.primary-nav {
-    margin: 0 0 0 75px;
+    margin: 0;
     padding: 0;
 
     li {
       display: inline;
+      margin-right: 40px;
 
       a {
-        color: $txt-light;
-        padding-right: 25px;
+        color: #fff;
+        padding: 0;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        font-size: 15px;
+        letter-spacing: 1.5px;
 
         &:hover {
-          color: $accent-color;
+          color: rgba(255, 255, 255, 0.85);
+          text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
         }
       }
-      &:last-child a {
-        padding-right: 0px;
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
+  
   ul.member-actions {
     li {
       display: inline;
 
       a {
-        color: $txt-light;
-
-        &:hover {
-          color: $accent-color;
-        }
+        color: #fff;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
       }
     }
   }
+  
   .header-nav {
     display: inline-block;
   }
+  
   .member-actions {
     position: absolute;
     right: 0;
-    top: 41px;
+    top: 0;
     transition: all 300ms ease-in-out;
+  }
+  
+  .btn-white {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: #fff;
+    padding: 10px 28px;
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: none;
+    transition: all 0.3s ease;
+    font-family: 'Cormorant Garamond', serif;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: #fff;
+      color: #fff;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+.fixed header {
+  a {
+    color: #2c3e50;
+    text-shadow: none;
+  }
+  
+  ul.primary-nav li a {
+    color: #2c3e50;
+    text-shadow: none;
+    font-family: 'Cormorant Garamond', serif;
+    
+    &:hover {
+      color: #555;
+    }
+  }
+  
+  ul.member-actions li a {
+    color: #2c3e50;
+    text-shadow: none;
+  }
+  
+  .btn-white {
+    border-color: #2c3e50;
+    color: #2c3e50;
+    text-shadow: none;
+    
+    &:hover {
+      background-color: #2c3e50;
+      color: #fff;
+      border-color: #2c3e50;
+    }
   }
 }
 .down-arrow {
@@ -399,15 +493,48 @@ Intro
   width: 80%;
 }
 
-#intro {
-  padding-top: 40px;
-  img {
-    width: 100%;
-    height: auto;
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  color: #2c3e50;
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: none;
+  margin-bottom: 60px;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 36px;
   }
 }
-#intro p {
-  text-align: center;
+
+.events .section-title {
+  margin-bottom: 16px;
+}
+
+#intro {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #fff;
+  
+  .story-image-wrapper {
+    margin-bottom: 60px;
+    
+    .story-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  
+  .story-content {
+    p {
+      color: #555;
+      font-size: 20px;
+      line-height: 1.9;
+      font-weight: 300;
+      text-align: left;
+    }
+  }
 }
 
 /* ==========================================================================
@@ -549,22 +676,356 @@ Features-stack
 }
 
 /* ==========================================================================
+Invitation
+========================================================================== */
+#invitation {
+  background: #fff;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-family: $serif;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: none;
+  }
+  p {
+    color: #555;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+}
+
+/* ==========================================================================
+Registry
+========================================================================== */
+#registry {
+  background: #fff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
+  .registry-content {
+    p {
+      color: #555;
+      font-size: 20px;
+      margin-bottom: 40px;
+      font-weight: 300;
+      line-height: 1.9;
+    }
+  }
+}
+
+.travel-section {
+  background: #fafafa;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
+  .travel-content {
+    p {
+      color: #555;
+      font-size: 20px;
+      line-height: 1.9;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+    
+    .travel-section-heading {
+      font-family: 'Cormorant Garamond', serif;
+      color: #2c3e50;
+      font-size: 32px;
+      font-weight: 400;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+      text-align: left;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    
+    .travel-image-wrapper {
+      margin-bottom: 30px;
+      
+      .travel-image {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    
+    .travel-item {
+      margin-bottom: 60px;
+      
+      &:last-of-type {
+        margin-bottom: 60px;
+      }
+      
+      .row {
+        margin: 0;
+        align-items: flex-start;
+      }
+      
+      .col-md-6 {
+        padding: 0 15px;
+        
+        &:first-child {
+          padding-right: 20px;
+          @media (max-width: 991px) {
+            padding-right: 15px;
+            margin-bottom: 30px;
+          }
+        }
+        
+        &:last-child {
+          padding-left: 20px;
+          @media (max-width: 991px) {
+            padding-left: 15px;
+          }
+        }
+      }
+      
+      .travel-item-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      a:hover .travel-item-image {
+        opacity: 0.9;
+      }
+      
+      .travel-item-heading {
+        font-family: 'Cormorant Garamond', serif;
+        color: #2c3e50;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 25px;
+        letter-spacing: 0.5px;
+        text-transform: none;
+      }
+      
+      p {
+        margin-bottom: 25px;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+      
+      li {
+        color: #555;
+        font-size: 20px;
+        line-height: 1.9;
+        font-weight: 300;
+        margin-bottom: 12px;
+        padding-left: 25px;
+        position: relative;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+        
+        &:before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          color: #2c3e50;
+          font-size: 20px;
+        }
+      }
+    }
+    
+    .fun-facts {
+      margin-bottom: 50px;
+    }
+    
+    // Practical Info section spacing - make everything uniform
+    .travel-section-heading {
+      + p,
+      + .travel-image-wrapper {
+        margin-top: 0;
+      }
+    }
+    
+    // Uniform spacing for all content in travel section
+    .travel-content {
+      // All paragraphs have uniform spacing
+      p {
+        margin-bottom: 30px;
+        margin-top: 0;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      
+      // Paragraphs followed by lists - remove bottom margin from paragraph
+      p + ul {
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+      
+      // Lists should have consistent spacing
+      ul {
+        margin-top: 0;
+        margin-bottom: 30px;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      
+      // Consistent spacing for practical info items
+      p strong {
+        display: inline-block;
+        margin-right: 5px;
+      }
+      
+      // Ensure section heading spacing is consistent
+      .travel-section-heading {
+        margin-bottom: 30px;
+      }
+    }
+    
+    a {
+      color: #2c3e50;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
 .events
 ========================================================================== */
 .events {
-  .leftcol {
-    padding-right: 100px;
-    border-right: solid 1px $keyline-color;
-  }
-  .rightcol {
-    padding-left: 100px;
-  }
-
-  .time {
-    font-size: 13px;
-    font-style: italic;
-    text-transform: lowercase;
-    color: $txt-primary;
+  background: #fafafa;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
+  .events-content {
+    .events-wedding-heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 16px;
+      text-align: center;
+      
+      .events-section-heading {
+        font-family: 'Cormorant Garamond', serif;
+        color: #2c3e50;
+        font-size: 32px;
+        font-weight: 400;
+        margin: 0 0 16px 0;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: none;
+      }
+      
+      .events-details-line {
+        font-family: 'Cormorant Garamond', serif;
+        color: #2c3e50;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        margin: 0 0 16px 0;
+        text-align: center;
+        
+        .events-date,
+        .events-venue,
+        .events-maps-link,
+        .events-sep {
+          font-family: inherit;
+          font-size: inherit;
+          font-weight: inherit;
+          color: inherit;
+        }
+        
+        .events-maps-link a {
+          color: #2c3e50;
+          text-decoration: underline;
+          transition: color 0.3s ease;
+          font: inherit;
+          
+          &:hover {
+            color: $accent-color;
+          }
+        }
+        
+        @media (max-width: 600px) {
+          font-size: 18px;
+        }
+      }
+    }
+    
+    > p {
+      color: #555;
+      font-size: 20px;
+      line-height: 1.9;
+      font-weight: 300;
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+    
+    .events-image-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 0;
+      background: #fff;
+      padding: 4px;
+      max-width: 100%;
+      
+      .events-image-row {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        width: 100%;
+      }
+      
+      .events-image-cell {
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+        background: #fff;
+        
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          object-fit: cover;
+          aspect-ratio: 3 / 4;
+        }
+      }
+      
+      @media (max-width: 767px) {
+        .events-image-row {
+          flex-direction: column;
+        }
+        
+        .events-image-cell img {
+          aspect-ratio: 4 / 3;
+        }
+      }
+    }
   }
 }
 
@@ -747,8 +1208,32 @@ Embed video
 }
 
 /* ==========================================================================
-Google map
+Google map / Travel & Stay
 ========================================================================== */
+#map {
+  background: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+  h3 {
+    font-family: $serif;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: none;
+    color: #2c3e50;
+    margin-bottom: 25px;
+  }
+  
+  p {
+    color: #555;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 50px;
+  }
+}
+
 #map-canvas {
   height: 500px;
   width: 100%;
@@ -764,6 +1249,19 @@ Google map
   background: #fff;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+  
+  h5 {
+    color: #2c3e50;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+  }
 }
 #btn-show-content {
   padding: 20px;
@@ -789,67 +1287,19 @@ RSVP form
 ========================================================================== */
 .rsvp {
   padding-bottom: 140px;
-  .rsvp-form {
-    .rsvp-btn {
-      padding: 15px 0;
-      border-radius: 3px;
-      width: 100%;
-      font-size: 13px;
-    }
-    .form-input-group {
-      width: 100%;
-      height: 55px;
-      margin: 0 auto 10px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      border: solid 1px $keyline-color;
-      text-align: left;
-      position: relative;
-
-      i {
-        color: $accent-color;
-        font-size: 14px;
-      }
-      i:after {
-        content: "";
-        height: 30px;
-        width: 1px;
-        border-right: solid 1px $keyline-color;
-        position: absolute;
-        top: 50%;
-        left: 30px;
-        transform: translateY(-50%);
-      }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
-        font-size: 14px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 20px;
-      }
-      input {
-        padding-left: 68px;
-        width: 100%;
-        height: 100%;
-        -moz-border-radius: 6px;
-        -webkit-border-radius: 6px;
-        border-radius: 6px;
-        border: none;
-      }
-      input::-webkit-input-placeholder {
-        color: $form-placeholder;
-      }
-      input:-moz-placeholder {
-        color: $form-placeholder;
-      }
-      input::-moz-placeholder {
-        color: $form-placeholder;
-      }
-      input:-ms-input-placeholder {
-        color: $form-placeholder;
-      }
-    }
+  background: #fafafa;
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #34495e;
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+  .btn {
+    font-size: 19px;
+    padding: 15px 40px;
   }
 }
 

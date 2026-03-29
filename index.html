@@ -1,527 +1,1555 @@
-<!doctype html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Ram & Antara getting hitched!</title>
-    <meta name="description" content="We would like to invite you to our big day.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Ram & Antara getting hitched">
-    <meta property="og:description" content="We would like to invite you to our big day.">
-    <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
-    <meta property="og:type" content="website">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chisara &amp; Ochuko — 30 June 2027</title>
+  <meta name="description" content="Join us as we celebrate our wedding at Montekristo Estate, Malta on 30th June 2027.">
+  <meta property="og:title" content="Chisara &amp; Ochuko — 30 June 2027">
+  <meta property="og:description" content="Join us as we celebrate our wedding at Montekristo Estate, Malta.">
+  <meta property="og:image" content="img/eng_pics/xistencephotography-77.jpg">
+  <meta property="og:type" content="website">
 
-    <script>
-        // load css files from CDN if local node_modules fail
-        function loadCssFromCDN(css) {
-            // create new link tag
-            const link = document.createElement('link');
-            if (css === 'animate.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
-            } else if (css === 'font-awesome.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
-            }
-            link.rel = 'stylesheet';
+  <link rel="icon" type="image/png" href="C-O favicon.png">
 
-            // add link tag to head section
-            document.getElementsByTagName('head')[0].appendChild(link);
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
-        // load js files from CDN if local node_modules fail
-        function loadJsFromCDN(js) {
-            if (js === 'waypoints.js') {
-                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
-            } else if (js === 'jquery.js') {
-                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
-            }
-        }
-    </script>
+  <style>
+    /* ================================================
+       RESET & BASE
+       ================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/queries.css">
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #FDFBF8;
+      color: #2C2926;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul { list-style: none; }
+
+    /* ================================================
+       CSS VARIABLES
+       ================================================ */
+    :root {
+      --cream:      #FDFBF8;
+      --linen:      #F2EDE6;
+      --dark:       #1C1A18;
+      --charcoal:   #2C2926;
+      --muted:      #7A706A;
+      --gold:       #B5955A;
+      --gold-light: #D4B896;
+      --white:      #FFFFFF;
+
+      --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+      --font-sans:  'Jost', -apple-system, sans-serif;
+
+      --section-pad: 110px 0;
+      --max-w:       1100px;
+      --pad-x:       0 48px;
+    }
+
+    /* ================================================
+       LAYOUT HELPERS
+       ================================================ */
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: var(--pad-x);
+    }
+
+    .container--narrow {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: var(--pad-x);
+    }
+
+    /* ================================================
+       NAVIGATION
+       ================================================ */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      transition: background 0.45s ease, box-shadow 0.45s ease;
+    }
+
+    /* Solid background when scrolled */
+    #nav.scrolled {
+      background: rgba(253, 251, 248, 0.96);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 48px;
+      transition: padding 0.45s ease;
+    }
+
+    #nav.scrolled .nav-inner {
+      padding: 20px 48px;
+    }
+
+    /* Nav links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 44px;
+    }
+
+    .nav-links a {
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #fff;
+      transition: opacity 0.2s, color 0.45s ease;
+    }
+
+    #nav.scrolled .nav-links a {
+      color: var(--charcoal);
+    }
+
+    .nav-links a:hover { opacity: 0.65; }
+
+    /* RSVP button */
+    .nav-rsvp {
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.6);
+      padding: 10px 28px;
+      transition: background 0.2s, color 0.45s ease, border-color 0.45s ease;
+    }
+
+    .nav-rsvp:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #fff;
+    }
+
+    #nav.scrolled .nav-rsvp {
+      color: var(--charcoal);
+      border-color: rgba(44,41,38,0.38);
+    }
+
+    #nav.scrolled .nav-rsvp:hover {
+      background: var(--charcoal);
+      color: var(--cream);
+      border-color: var(--charcoal);
+    }
+
+    /* Hamburger button */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 26px;
+      height: 1px;
+      background: #fff;
+      transition: background 0.45s ease;
+    }
+
+    #nav.scrolled .nav-hamburger span { background: var(--charcoal); }
+
+    /* Mobile menu */
+    .mobile-menu {
+      display: none;
+      background: var(--cream);
+      padding: 24px 48px 36px;
+      border-top: 1px solid rgba(0,0,0,0.07);
+    }
+
+    .mobile-menu.open { display: block; }
+
+    .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .mobile-menu a {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--charcoal);
+      font-weight: 400;
+      transition: opacity 0.2s;
+    }
+
+    .mobile-menu a:hover { opacity: 0.6; }
+
+    /* ================================================
+       HERO
+       ================================================ */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 640px;
+      background: url('img/eng_pics/xistencephotography-77.jpg') center center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Overall darkening — strong enough to make white text pop */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.38);
+      z-index: 1;
+    }
+
+    /* Top gradient for nav + hero text readability */
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 280px;
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.62) 0%,
+        rgba(0,0,0,0.15) 70%,
+        transparent 100%
+      );
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+      padding: 0 24px;
+      animation: heroFadeIn 1.4s ease forwards;
+    }
+
+    @keyframes heroFadeIn {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-eyebrow {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: #ffffff;          /* explicit — overrides global p { color } */
+      opacity: 0.82;
+      margin-bottom: 28px;
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(76px, 13vw, 148px);
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      line-height: 0.95;
+      color: #fff;
+    }
+
+    .hero-rule {
+      width: 56px;
+      height: 1px;
+      background: rgba(255,255,255,0.55);
+      margin: 30px auto;
+    }
+
+    .hero-date {
+      font-family: var(--font-serif);
+      font-size: clamp(18px, 2.8vw, 30px);
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      font-style: italic;
+      color: #ffffff;          /* explicit — overrides global p { color } */
+      opacity: 0.92;
+    }
+
+    .hero-arrow {
+      position: absolute;
+      bottom: 44px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      color: #fff;
+      opacity: 0.55;
+      font-size: 30px;
+      line-height: 1;
+      animation: float 2.6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(11px); }
+    }
+
+    /* ================================================
+       SECTION BASE STYLES
+       ================================================ */
+    .section {
+      padding: var(--section-pad);
+    }
+
+    .section--light { background: var(--cream); }
+    .section--warm  { background: var(--linen); }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 68px;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(40px, 5.5vw, 60px);
+      font-weight: 300;
+      letter-spacing: 0.07em;
+      color: var(--dark);
+      margin-bottom: 22px;
+    }
+
+    .section-rule {
+      width: 38px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.92;
+      font-weight: 300;
+      color: var(--charcoal);
+    }
+
+    /* ================================================
+       OUR STORY
+       ================================================ */
+    .story-image-wrap {
+      overflow: hidden;
+      margin-bottom: 52px;
+    }
+
+    .story-image {
+      width: 100%;
+      max-height: 660px;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.8s ease;
+    }
+
+    .story-image-wrap:hover .story-image {
+      transform: scale(1.02);
+    }
+
+    .story-placeholder {
+      text-align: center;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 23px;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    /* ================================================
+       STORY PHOTO GALLERY
+       ================================================ */
+
+    /* Story body text */
+    .story-quote {
+      font-family: var(--font-serif);
+      font-style: normal;
+      font-size: clamp(17px, 2vw, 21px);
+      font-weight: 300;
+      color: var(--charcoal);
+      line-height: 1.85;
+      margin-bottom: 32px;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .story-quote:last-of-type {
+      margin-bottom: 64px;
+    }
+
+    /*
+      5-photo orientation-matched layout — 3 columns
+      ─────────────────────────────────────────────────────
+      All photos are PORTRAIT (4024×6048) except photo-38
+      which is LANDSCAPE (6048×4024).
+
+      Row 1 (520px) │ port-90  │ port-17  │ port-65  │
+      Row 2 (520px) │ land-38 (span 2)    │ port-85  │
+
+      — Portrait cells: ~367px wide × 520px tall
+        object-position: top center → faces always in frame
+      — Landscape cell: ~734px wide × 520px tall
+        object-position: center → shows full scene naturally
+      ─────────────────────────────────────────────────────
+    */
+    .story-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 520px 520px;
+      gap: 8px;
+    }
+
+    .story-gallery-item {
+      overflow: hidden;
+    }
+
+    /* Base: every image fills its cell, face anchored to top */
+    .story-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform 0.8s ease;
+      display: block;
+    }
+
+    .story-gallery-item:hover img {
+      transform: scale(1.04);
+    }
+
+    /* ── Row 1: three portrait photos in portrait-shaped cells ── */
+    /* items 1, 2, 3 each occupy 1 column × 520px — no extra rules needed */
+
+    /* ── Row 2: landscape photo spans 2 cols, portrait fills 3rd col ── */
+    .story-gallery-item:nth-child(4) {
+      grid-column: span 2;  /* landscape-38: wide cell suits its 3:2 ratio */
+    }
+
+    .story-gallery-item:nth-child(4) img {
+      object-position: top center; /* portrait-90 in wide cell: show faces at top */
+    }
+
+    /* item 5 fills the remaining 1 col — portrait cell ✓ */
+
+    /* ── Mobile: 2 columns, explicit heights ── */
+    @media (max-width: 640px) {
+      .story-gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 380px 380px 380px;
+        gap: 6px;
+      }
+      /* portrait pair — row 1 */
+      /* portrait pair — row 2 (items 3 + 4 landscape) */
+      .story-gallery-item:nth-child(4) {
+        grid-column: span 1; /* landscape fits side by side on mobile too */
+      }
+      .story-gallery-item:nth-child(4) img {
+        object-position: center center;
+      }
+      /* portrait-85 on its own row, full width */
+      .story-gallery-item:nth-child(5) {
+        grid-column: span 2;
+      }
+    }
+
+    /* ================================================
+       EVENTS
+       ================================================ */
+    .event-card {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 72px;
+    }
+
+    .event-eyebrow {
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+
+    .event-name {
+      font-family: var(--font-serif);
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--dark);
+      margin-bottom: 24px;
+    }
+
+    .event-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-family: var(--font-sans);
+      font-size: 11.5px;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    .event-meta-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--gold-light);
+      flex-shrink: 0;
+    }
+
+    .event-meta-maps {
+      color: var(--gold);
+      border-bottom: 1px solid var(--gold-light);
+      padding-bottom: 1px;
+      transition: opacity 0.2s;
+    }
+
+    .event-meta-maps:hover { opacity: 0.65; }
+
+    .event-body {
+      font-size: 17px;
+      line-height: 1.95;
+      color: var(--charcoal);
+      text-align: center;
+      font-weight: 300;
+    }
+
+    /* Montekristo venue image grid */
+    .venue-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .venue-grid-cell {
+      overflow: hidden;
+    }
+
+    .venue-grid-cell img {
+      width: 100%;
+      height: 310px;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .venue-grid-cell:hover img {
+      transform: scale(1.04);
+    }
+
+    /* ================================================
+       REGISTRY
+       ================================================ */
+    .registry-note {
+      text-align: center;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(18px, 2.2vw, 22px);
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.8;
+      max-width: 620px;
+      margin: 0 auto 48px;
+    }
+
+    .registry-btn {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--cream);
+      background: var(--dark);
+      border: 1px solid var(--dark);
+      padding: 16px 44px;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .registry-btn:hover {
+      background: transparent;
+      color: var(--dark);
+    }
+
+    /* ================================================
+       TRAVEL & STAY
+       ================================================ */
+    .travel-intro,
+    .travel-practical {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .travel-intro-img {
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      margin: 40px 0 52px;
+    }
+
+    .travel-heading {
+      font-family: var(--font-serif);
+      font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: var(--dark);
+      margin-bottom: 28px;
+    }
+
+    .travel-heading--center {
+      text-align: center;
+      margin-top: 88px;
+      margin-bottom: 0;
+    }
+
+    .travel-things-rule {
+      width: 38px;
+      height: 1px;
+      background: var(--gold);
+      margin: 20px auto 0;
+    }
+
+    /* Fun facts list */
+    .fun-facts {
+      margin-top: 4px;
+    }
+
+    .fun-facts li {
+      font-size: 16px;
+      line-height: 1.88;
+      font-weight: 300;
+      color: var(--charcoal);
+      padding: 18px 0 18px 22px;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      position: relative;
+    }
+
+    .fun-facts li:first-child {
+      border-top: 1px solid rgba(0,0,0,0.07);
+    }
+
+    .fun-facts li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 30px;
+      width: 8px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    /* Alternating travel items */
+    .travel-items {
+      margin-top: 20px;
+    }
+
+    .travel-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin: 64px 0;
+    }
+
+    .travel-item--reverse .travel-item-img-wrap {
+      order: 2;
+    }
+
+    .travel-item--reverse .travel-item-text {
+      order: 1;
+    }
+
+    .travel-item-img-wrap {
+      overflow: hidden;
+    }
+
+    .travel-item-img-wrap img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .travel-item-img-wrap:hover img {
+      transform: scale(1.04);
+    }
+
+    .travel-item-num {
+      font-family: var(--font-serif);
+      font-size: 60px;
+      font-weight: 300;
+      color: var(--gold-light);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .travel-item-title {
+      font-family: var(--font-serif);
+      font-size: clamp(22px, 2.6vw, 29px);
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      color: var(--dark);
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+
+    .travel-item-link {
+      display: inline-block;
+      margin-top: 18px;
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 1px solid var(--gold-light);
+      padding-bottom: 2px;
+      transition: opacity 0.2s;
+    }
+
+    .travel-item-link:hover { opacity: 0.65; }
+
+    /* Practical info */
+    .practical-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 44px;
+      margin-top: 20px;
+    }
+
+    .practical-label {
+      font-family: var(--font-sans);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .practical-text {
+      font-size: 15.5px;
+      line-height: 1.85;
+      font-weight: 300;
+      color: var(--charcoal);
+    }
+
+    .practical-transport {
+      margin-top: 48px;
+    }
+
+    .practical-list {
+      margin-top: 14px;
+    }
+
+    .practical-list li {
+      font-size: 15.5px;
+      line-height: 1.85;
+      font-weight: 300;
+      color: var(--charcoal);
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+
+    .practical-list li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--gold-light);
+      font-size: 12px;
+      top: 2px;
+    }
+
+    /* ================================================
+       FOOTER
+       ================================================ */
+    footer {
+      background: var(--dark);
+      padding: 76px 48px;
+      text-align: center;
+    }
+
+    .footer-top-link {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 44px;
+      transition: color 0.2s;
+    }
+
+    .footer-top-link:hover { color: rgba(255,255,255,0.65); }
+
+    .footer-text {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* Beating heart */
+    .heart {
+      display: inline-block;
+      animation: heartbeat 1.6s ease-in-out infinite;
+    }
+
+    @keyframes heartbeat {
+      0%   { transform: scale(1); }
+      12%  { transform: scale(1.28); }
+      25%  { transform: scale(1); }
+      38%  { transform: scale(1.17); }
+      55%  { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+
+    /* ================================================
+       RESPONSIVE — TABLET (≤ 900px)
+       ================================================ */
+    @media (max-width: 900px) {
+      :root {
+        --section-pad: 88px 0;
+        --pad-x: 0 32px;
+      }
+
+      .travel-item {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .travel-item--reverse .travel-item-img-wrap,
+      .travel-item--reverse .travel-item-text {
+        order: unset;
+      }
+
+      .travel-item-img-wrap img {
+        height: 280px;
+      }
+
+      .practical-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+    }
+
+    /* ================================================
+       RESPONSIVE — MOBILE (≤ 640px)
+       ================================================ */
+    @media (max-width: 640px) {
+      :root {
+        --section-pad: 72px 0;
+        --pad-x: 0 24px;
+      }
+
+      /* Hide desktop nav, show hamburger */
+      .nav-links  { display: none; }
+      .nav-rsvp   { display: none; }
+      .nav-hamburger { display: flex; }
+
+      .nav-inner {
+        padding: 22px 24px;
+      }
+
+      #nav.scrolled .nav-inner {
+        padding: 16px 24px;
+      }
+
+      .mobile-menu {
+        padding: 24px 24px 36px;
+      }
+
+      /* Hero */
+      .hero-eyebrow { font-size: 9.5px; letter-spacing: 0.28em; }
+      .hero-title   { font-size: clamp(56px, 16vw, 88px); }
+      .hero-date    { font-size: clamp(16px, 5vw, 22px); }
+
+      /* Sections */
+      .section-header { margin-bottom: 48px; }
+      .section-title  { font-size: clamp(34px, 9vw, 48px); }
+
+      /* Events */
+      .venue-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .venue-grid-cell img { height: 240px; }
+
+      /* Practical */
+      .practical-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      /* Footer */
+      footer { padding: 56px 24px; }
+    }
+
+    /* ================================================
+       PASSWORD GATE
+       ================================================ */
+    #password-gate {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: url('img/eng_pics/xistencephotography-77.jpg') center center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.6s ease;
+    }
+
+    #password-gate::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.42);
+    }
+
+    #password-gate.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .gate-card {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 0 24px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .gate-eyebrow {
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      font-weight: 400;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 20px;
+    }
+
+    .gate-title {
+      font-family: var(--font-serif);
+      font-size: clamp(52px, 10vw, 88px);
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .gate-rule {
+      width: 40px;
+      height: 1px;
+      background: rgba(255,255,255,0.45);
+      margin: 0 auto 40px;
+    }
+
+    .gate-input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255,255,255,0.55);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      text-align: center;
+      padding: 10px 0;
+      outline: none;
+      transition: border-color 0.2s ease;
+      margin-bottom: 28px;
+    }
+
+    .gate-input::placeholder {
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-size: 10.5px;
+    }
+
+    .gate-input:focus {
+      border-bottom-color: rgba(255,255,255,0.9);
+    }
+
+    .gate-btn {
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #fff;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.6);
+      padding: 13px 40px;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease;
+      width: 100%;
+    }
+
+    .gate-btn:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: #fff;
+    }
+
+    .gate-error {
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,180,180,0.9);
+      margin-top: 20px;
+      min-height: 16px;
+      transition: opacity 0.2s ease;
+    }
+
+    .gate-error:empty {
+      opacity: 0;
+    }
+  </style>
 </head>
-<body id="top">
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
-<section class="hero">
-    <section class="navigation">
-        <header>
-            <div class="header-content">
-                <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
-                <div class="header-nav">
-                    <nav>
-                        <ul class="primary-nav">
-                            <li><a href="#intro">How we met</a></li>
-                            <li><a href="#events">Events</a></li>
-                            <li><a href="#instagram">Instagram</a></li>
-                            <li><a href="#eng-pics">Engagement</a></li>
-                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
-                        </ul>
-                        <ul class="member-actions">
-                            <li><a href="#map" class="login">Venue</a></li>
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="navicon">
-                    <a class="nav-toggle" href="#"><span></span></a>
-                </div>
-            </div>
-        </header>
-    </section>
+<body>
+
+  <!-- ================================================
+       PASSWORD GATE
+       ================================================ -->
+  <div id="password-gate">
+    <div class="gate-card">
+      <p class="gate-eyebrow">Montekristo Estate &nbsp;·&nbsp; Malta</p>
+      <h1 class="gate-title">C &amp; O</h1>
+      <div class="gate-rule"></div>
+      <input
+        type="password"
+        id="gate-input"
+        class="gate-input"
+        placeholder="Enter password"
+        autocomplete="current-password"
+      >
+      <button class="gate-btn" id="gate-btn">Enter</button>
+      <p class="gate-error" id="gate-error"></p>
+    </div>
+  </div>
+
+  <!-- ================================================
+       NAVIGATION
+       ================================================ -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#travel">Travel &amp; Stay</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#registry">Registry</a></li>
+      </ul>
+      <a
+        href="https://forms.monday.com/forms/f7c08409b5b28aa2b2c3c82e97ad66ec?r=euc1"
+        target="_blank"
+        rel="noopener"
+        class="nav-rsvp"
+      >RSVP</a>
+      <button class="nav-hamburger" id="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" role="navigation">
+      <ul>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#travel">Travel &amp; Stay</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#registry">Registry</a></li>
+        <li>
+          <a
+            href="https://forms.monday.com/forms/f7c08409b5b28aa2b2c3c82e97ad66ec?r=euc1"
+            target="_blank"
+            rel="noopener"
+          >RSVP</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================================================
+       HERO
+       ================================================ -->
+  <section class="hero" id="top" aria-label="Hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Montekristo Estate &nbsp;·&nbsp; Malta</p>
+      <h1 class="hero-title">C &amp; O</h1>
+      <div class="hero-rule"></div>
+      <p class="hero-date">30th June 2027</p>
+    </div>
+    <a href="#story" class="hero-arrow" aria-label="Scroll to Our Story">&#8964;</a>
+  </section>
+
+  <!-- ================================================
+       OUR STORY
+       ================================================ -->
+  <section class="section section--light" id="story">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="hero-content text-center">
-                    <!--<h1>Ram and Antara</h1>-->
-                    <img src="img/logo-lg.png">
-                    <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
-                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
-                                                           class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
-            <div class="col-sm-4 hidden-xs"></div>
-        </div>
-    </div>
-    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
-</section>
+      <div class="section-header">
+        <h2 class="section-title">Our Story</h2>
+        <div class="section-rule"></div>
+      </div>
 
-<section id="invitation" class="section-padding">
+      <p class="story-quote">
+        Our story began in 2021 with a bold Instagram DM sent across 6,500 miles. What started as a
+        simple message quickly became something neither of us expected. Despite a six&#8209;hour time
+        difference, we talked every single day — sharing stories, building inside jokes, and discovering
+        how natural it felt to be ourselves with one another. Somewhere between the laughter and the
+        late&#8209;night conversations, a real connection began to grow.
+      </p>
+      <p class="story-quote">
+        Four months later, we finally met in person, but our journey was still very much shaped by
+        distance. From 2021 to 2025, we navigated a long&#8209;distance relationship spanning the US
+        and the UK — learning patience, trust, and how to love intentionally across oceans. We counted
+        down visits, cherished airport reunions, and made the most of every moment together. Distance
+        challenged us, but it also strengthened us, teaching us how to choose each other even when
+        being together wasn't easy.
+      </p>
+      <p class="story-quote">
+        Six years on, that first message has grown into a life filled with love, adventure, and memories
+        made across four continents. Through every trip, every goodbye, and every joyful reunion, we've
+        built something steady, deep, and lasting. We're so excited to celebrate the next chapter of our
+        story with the people who have supported us along the way. Join us in Malta as we say "I do."
+        We did it, Joe!
+      </p>
+
+      <!--
+        5-photo orientation-matched layout
+        ─────────────────────────────────────────────────────────
+        Row 1 │  port-90  │  port-17  │  port-65  │  (3 portraits)
+        Row 2 │  land-38 (span 2 cols)  │  port-85  │
+        ─────────────────────────────────────────────────────────
+        Portraits: object-position top center — faces always visible
+        Landscape: object-position center   — full scene
+      -->
+      <div class="story-gallery">
+
+        <!-- Row 1: three portrait photos — tall cells, face-anchored -->
+        <div class="story-gallery-item">
+          <img src="img/eng_pics/xistencephotography-90.jpg" alt="Chisara and Ochuko">
+        </div>
+        <div class="story-gallery-item">
+          <img src="img/eng_pics/xistencephotography-17.jpg" alt="Chisara and Ochuko">
+        </div>
+        <div class="story-gallery-item">
+          <img src="img/eng_pics/xistencephotography-65.jpg" alt="Chisara and Ochuko">
+        </div>
+
+        <!-- Row 2: landscape-38 in wide 2-col cell + portrait-85 in 1-col cell -->
+        <div class="story-gallery-item">
+          <img src="img/eng_pics/xistencephotography-38.jpg" alt="Chisara and Ochuko">
+        </div>
+        <div class="story-gallery-item">
+          <img src="img/eng_pics/xistencephotography-85.jpg" alt="Chisara and Ochuko">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       EVENTS
+       ================================================ -->
+  <section class="section section--warm" id="events">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>We are getting hitched</h3>
-                <p>The dates are 27<sup>th</sup> & 28<sup>th</sup> of November '17 and we would like you to be a part of
-                    it.</p>
-                <div class="share-bar"></div>
-            </div>
-        </div>
-    </div>
-</section>
+      <div class="section-header">
+        <h2 class="section-title">Events</h2>
+        <div class="section-rule"></div>
+      </div>
 
-<section id="intro">
+      <div class="event-card">
+        <p class="event-eyebrow">Join Us</p>
+        <h3 class="event-name">Our Wedding Day</h3>
+        <div class="event-meta">
+          <span>30th June 2027</span>
+          <span class="event-meta-dot"></span>
+          <span>3:30&nbsp;pm</span>
+          <span class="event-meta-dot"></span>
+          <span>Montekristo Estate, Malta</span>
+          <span class="event-meta-dot"></span>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Triq+%C4%A6al+Farru%C4%A1,+Is-Si%C4%A1%C4%A1iewi,+Malta"
+            target="_blank"
+            rel="noopener"
+            class="event-meta-maps"
+          >View on Maps</a>
+        </div>
+        <p class="event-body">
+          Join us on the 30th of June, 2027, as we celebrate our special day at Montekristo Estate,
+          a breathtaking retreat nestled in the heart of the Maltese countryside. With its rich cultural
+          heritage and stunning surroundings, there's no more perfect place to gather the people we love
+          most. Beautiful venue, yes. Demure event? Absolutely not. We celebrate till the wee hours of
+          the morning, please plan accordingly! Children are a blessing. A blessing best enjoyed the
+          morning after our wedding, when you're reunited and well-rested. Adults only, please.
+        </p>
+      </div>
+
+      <div class="venue-grid">
+        <div class="venue-grid-cell">
+          <img src="img/eng_pics/montekristo 1.jpeg" alt="Montekristo Estate">
+        </div>
+        <div class="venue-grid-cell">
+          <img src="img/eng_pics/montekristo 2.webp" alt="Montekristo Estate">
+        </div>
+        <div class="venue-grid-cell">
+          <img src="img/eng_pics/montekristo 3.webp" alt="Montekristo Estate">
+        </div>
+        <div class="venue-grid-cell">
+          <img src="img/eng_pics/montekristo 4.webp" alt="Montekristo Estate">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       REGISTRY
+       ================================================ -->
+  <section class="section section--light" id="registry">
+    <div class="container--narrow">
+      <div class="section-header">
+        <h2 class="section-title">Registry</h2>
+        <div class="section-rule"></div>
+      </div>
+      <p class="registry-note">
+        We skipped the registry. If you'd like to gift us something, cold hard cash is always the right size, colour, and fit. We love you all, and can't wait to see you!
+      </p>
+      <a
+        href="https://withjoy.com/chisara-and-ochuko/registry"
+        target="_blank"
+        rel="noopener"
+        class="registry-btn"
+      >View Our Registry</a>
+    </div>
+  </section>
+
+  <!-- ================================================
+       TRAVEL & STAY
+       ================================================ -->
+  <section class="section section--warm" id="travel">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">How we met</h3>
-            </div>
+
+      <div class="section-header">
+        <h2 class="section-title">Travel &amp; Stay</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <!-- Welcome to Malta (narrow) -->
+      <div class="travel-intro">
+        <h3 class="travel-heading">Welcome to Malta</h3>
+        <img
+          src="img/eng_pics/malta-1.webp"
+          alt="Malta"
+          class="travel-intro-img"
+        >
+        <p>We're so excited to celebrate our wedding in one of the Mediterranean's most enchanting destinations!
+        Malta is a sun-soaked archipelago where ancient history meets crystal-clear waters, where honey-colored
+        limestone cities cascade down to turquoise lagoons, and where 7,000 years of history come alive around
+        every corner.</p>
+
+        <h3 class="travel-heading" style="margin-top: 56px;">Fun Facts</h3>
+        <ul class="fun-facts">
+          <li>Malta was awarded the George Cross for the bravery of its people during WWII — it's the only
+          country with a gallantry award on its national flag!</li>
+          <li>Game of Thrones, Gladiator, and Troy were all filmed here! You can visit the actual filming
+          locations, including King's Landing and the Azure Window site in Gozo.</li>
+        </ul>
+      </div>
+
+      <!-- Things to Do heading -->
+      <h3 class="travel-heading travel-heading--center">Things to Do in Malta</h3>
+      <div class="travel-things-rule"></div>
+
+      <!-- Alternating travel items -->
+      <div class="travel-items">
+
+        <!-- 01 Valletta -->
+        <div class="travel-item">
+          <div class="travel-item-img-wrap">
+            <a href="https://www.visitmalta.com/en/" target="_blank" rel="noopener">
+              <img src="img/eng_pics/malta-2.jpg" alt="Explore Valletta">
+            </a>
+          </div>
+          <div class="travel-item-text">
+            <div class="travel-item-num">01</div>
+            <h4 class="travel-item-title">Explore Valletta</h4>
+            <p>Europe's smallest capital packs a punch with over 300 monuments within its fortified walls.
+            Wander the narrow streets lined with colorful wooden balconies, visit the breathtaking baroque
+            St. John's Co-Cathedral, and catch sunset views from the Upper Barrakka Gardens overlooking
+            the Grand Harbour.</p>
+            <a href="https://www.visitmalta.com/en/" target="_blank" rel="noopener" class="travel-item-link">Plan your visit ↗</a>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div>
-            <div class="col-md-6">
-                <p>
-                    I first saw Antara in the Fall of 2008 when we started our undergrad. I was instantly attracted to
-                    her but was far too nervous to speak to her. I had told my friend I liked her and news had traveled
-                    fast and she soon found out. Her first reaction was "Who is Ram?" and she began searching for me in
-                    the class. She started to take notice of me and no matter how boring the lecture was, we never
-                    missed a class after that. After a good few months I finally plucked up the courage to ask her out
-                    and the rest is history :)
-                </p>
-            </div>
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/DSD_0214.jpg" class="wp2"></div>
+
+        <!-- 02 Blue Lagoon -->
+        <div class="travel-item travel-item--reverse">
+          <div class="travel-item-img-wrap">
+            <a href="https://www.visitmalta.com/en/attraction/blue-lagoon" target="_blank" rel="noopener">
+              <img src="img/eng_pics/malta-3.jpg" alt="Blue Lagoon, Comino">
+            </a>
+          </div>
+          <div class="travel-item-text">
+            <div class="travel-item-num">02</div>
+            <h4 class="travel-item-title">Blue Lagoon, Comino</h4>
+            <p>This is Malta's crown jewel — impossibly turquoise waters so clear you can see straight to the
+            bottom. Perfect for swimming, snorkeling, or just floating in paradise. Take a boat tour from
+            Sliema or Valletta for the full experience.</p>
+            <a href="https://www.visitmalta.com/en/attraction/blue-lagoon" target="_blank" rel="noopener" class="travel-item-link">Plan your visit ↗</a>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_2317.jpg" class="wp8"></div>
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/DSD_0214.jpg" class="wp9"></div>
+
+        <!-- 03 Mdina -->
+        <div class="travel-item">
+          <div class="travel-item-img-wrap">
+            <a href="https://www.visitmalta.com/en/attraction/mdina" target="_blank" rel="noopener">
+              <img src="img/eng_pics/malta-4.avif" alt="Mdina – The Silent City">
+            </a>
+          </div>
+          <div class="travel-item-text">
+            <div class="travel-item-num">03</div>
+            <h4 class="travel-item-title">Step Back in Time in Mdina</h4>
+            <p>Known as "The Silent City," this ancient walled city was Malta's capital for over 1,000 years.
+            Lose yourself in its medieval streets, visit the stunning cathedral, and enjoy panoramic views of
+            the entire island from its ramparts.</p>
+            <a href="https://www.visitmalta.com/en/attraction/mdina" target="_blank" rel="noopener" class="travel-item-link">Plan your visit ↗</a>
+          </div>
         </div>
+
+        <!-- 04 Blue Grotto -->
+        <div class="travel-item travel-item--reverse">
+          <div class="travel-item-img-wrap">
+            <a href="https://www.visitmalta.com/en/attraction/blue-grotto" target="_blank" rel="noopener">
+              <img src="img/eng_pics/malta-5.png" alt="Blue Grotto">
+            </a>
+          </div>
+          <div class="travel-item-text">
+            <div class="travel-item-num">04</div>
+            <h4 class="travel-item-title">Blue Grotto</h4>
+            <p>Take a traditional boat ride through a series of sea caves where sunlight creates magical blue
+            reflections on the limestone walls. Located on Malta's southern coast near the fishing village
+            of Żurrieq.</p>
+            <a href="https://www.visitmalta.com/en/attraction/blue-grotto" target="_blank" rel="noopener" class="travel-item-link">Plan your visit ↗</a>
+          </div>
+        </div>
+
+        <!-- 05 Three Cities -->
+        <div class="travel-item">
+          <div class="travel-item-img-wrap">
+            <a href="https://www.visitmalta.com/en/attraction/three-cities" target="_blank" rel="noopener">
+              <img src="img/eng_pics/malta-6.jpg" alt="The Three Cities">
+            </a>
+          </div>
+          <div class="travel-item-text">
+            <div class="travel-item-num">05</div>
+            <h4 class="travel-item-title">The Three Cities</h4>
+            <p>Vittoriosa, Senglea, and Cospicua — these historic harbour cities predate Valletta and offer a
+            glimpse into Malta's maritime heritage. Explore Fort St. Angelo, wander the narrow alleys, and
+            dine waterfront with views of the Grand Harbour.</p>
+            <a href="https://www.visitmalta.com/en/attraction/three-cities" target="_blank" rel="noopener" class="travel-item-link">Plan your visit ↗</a>
+          </div>
+        </div>
+
+        <!-- 06 Beach Days -->
+        <div class="travel-item travel-item--reverse">
+          <div class="travel-item-img-wrap">
+            <a href="https://www.visitmalta.com/en/attraction/beaches" target="_blank" rel="noopener">
+              <img src="img/eng_pics/malta-7.jpg" alt="Beach Days in Malta">
+            </a>
+          </div>
+          <div class="travel-item-text">
+            <div class="travel-item-num">06</div>
+            <h4 class="travel-item-title">Beach Days</h4>
+            <p>Golden Bay, Għajn Tuffieħa Bay, and St. Peter's Pool — a natural swimming pool perfect for cliff
+            diving — are just a few of Malta's stunning coastal spots. June is peak season, so pack your
+            swimsuit and a good book.</p>
+            <a href="https://www.visitmalta.com/en/attraction/beaches" target="_blank" rel="noopener" class="travel-item-link">Plan your visit ↗</a>
+          </div>
+        </div>
+
+        <!-- 07 Food & Wine -->
+        <div class="travel-item">
+          <div class="travel-item-img-wrap">
+            <a href="https://www.visitmalta.com/en/food-and-drink" target="_blank" rel="noopener">
+              <img src="img/eng_pics/malta-8.webp" alt="Maltese Food & Wine">
+            </a>
+          </div>
+          <div class="travel-item-text">
+            <div class="travel-item-num">07</div>
+            <h4 class="travel-item-title">Food &amp; Wine</h4>
+            <p>Don't miss trying traditional Maltese dishes like pastizzi (flaky pastries), rabbit stew, and
+            fresh seafood at the Marsaxlokk fish market. The local wine scene is fantastic too — be sure
+            to try a glass of Maltese Gellewża.</p>
+            <a href="https://www.visitmalta.com/en/food-and-drink" target="_blank" rel="noopener" class="travel-item-link">Plan your visit ↗</a>
+          </div>
+        </div>
+
+      </div><!-- /travel-items -->
+
+      <!-- Practical Info (narrow) -->
+      <div class="travel-practical" style="margin-top: 88px;">
+        <h3 class="travel-heading">Practical Info</h3>
+
+        <div class="practical-grid">
+          <div>
+            <p class="practical-label">Climate</p>
+            <p class="practical-text">Malta enjoys year-round sunshine. Late June averages 28°C (82°F) with
+            around 12 hours of daylight — perfect beach wedding weather.</p>
+          </div>
+          <div>
+            <p class="practical-label">Language</p>
+            <p class="practical-text">English is widely spoken everywhere alongside Maltese, so you'll have
+            no trouble getting around.</p>
+          </div>
+          <div>
+            <p class="practical-label">Currency</p>
+            <p class="practical-text">Euro (€). ATMs are plentiful and cards are accepted almost everywhere.</p>
+          </div>
+        </div>
+
+        <div class="practical-transport">
+          <p class="practical-label">Getting Around</p>
+          <ul class="practical-list">
+            <li>Buses are reliable and very affordable across the island</li>
+            <li>Taxis and ride-sharing apps are readily available</li>
+            <li>Car hire is recommended if you want to explore at your own pace (drive on the left!)</li>
+            <li>Ferry service connects Malta, Gozo, and Comino</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
-</section>
+  </section>
 
-<section class="events section-padding" id="events">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="header">Events</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <div class="wp3">
-                    <p><strong>27th November</strong></p>
+  <!-- ================================================
+       FOOTER
+       ================================================ -->
+  <footer>
+    <a href="#top" class="footer-top-link">Back to top ↑</a>
+    <p class="footer-text">
+      Crafted by Chisara with lots of <span class="heart">💗</span> for Ochuko
+    </p>
+  </footer>
 
-                    <h5>Mehndi <span class="time">1PM - 5PM</span></h5>
-                    <p>It's one of the oldest traditional Indian pre wedding ceremony where the bride and groom
-                        attend the event together and a professional mehndi artist applies
-                        mehndi to the bride's hands and feet. This will be having a celebratory
-                        festival feel to it with people wearing vibrant clothes and dancing, singing, playing
-                        games and a lot more.</p>
-                </div>
-                <div class="wp5">
-                    <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
-                    <p>This event is no way close to ethnic. The bride & groom would like to have some "shots before the
-                        knot". With booze flowing down the floor and the western attire on, everyone would be busy
-                        showing off their new moves on the stage which they have finely honed. Lastly, expect some beer
-                        pong matches & karaoke for sure.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <div class="wp4">
-                    <p><strong>28th November</strong></p>
+  <!-- ================================================
+       SCRIPTS
+       ================================================ -->
+  <script>
+    // --- Password gate ---
+    (function () {
+      const gate     = document.getElementById('password-gate');
+      const input    = document.getElementById('gate-input');
+      const btn      = document.getElementById('gate-btn');
+      const errorMsg = document.getElementById('gate-error');
+      const PASSWORD = 'cheezy30';
 
-                    <h5>Haldi <span class="time">10AM-11AM</span></h5>
-                    <p>The haldi ceremony is usually held separately for the bride and the groom. This one is for the
-                        bride. It is a low-key event that involves the application of turmeric paste on the hands, legs
-                        and face of the bride. The groom is not allowed to see the bride after this ritual until the
-                        final wedding ceremony starts.</p>
-                </div>
-                <div class="wp6">
-                    <h5>Wedding <span class="time">6PM-12AM</span></h5>
-                    <p>This is the main event in the entire wedding when the bride and the groom tie the
-                        knot. The groom comes with the barat and is greeted by the bride side with some dhol of course
-                        as maximum number of guests would be attending this event. This is when the couple circle the
-                        sacred fire and are finally declared husband and wife.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row section-padding">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
-                </a>
-            </div>
-        </div>
-        <!--<div class="row">
-            <div class="col-xs-12 section-border section-padding">
-            </div>
-        </div>-->
-    </div>
+      function unlock() {
+        sessionStorage.setItem('co_auth', '1');
+        gate.classList.add('hidden');
+        setTimeout(() => gate.remove(), 650);
+      }
 
-    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <h3 class="text-center section-padding">Ugh... dress codes?</h3>
-                    <h5>Mehndi <span class="time">1PM - 5PM</span></h5>
-                    <p>
-                        <strong>Ethnic indian wear</strong>
-                        <br>
-                        Ladies can wear something
-                        <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-women/">bright & vivid</a>
-                        and gentlemen can be on
-                        their <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-men/">vibrant
-                        kurtas</a> with pants or pyjamas along with an optional shawl.
-                    </p>
-                    <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
-                    <p>
-                        <strong>Western attire</strong>
-                        <br>
-                        A semi-formal look that is contemporary & fashionable which is not too prim & proper is the best
-                        to pull off this night. You can see some pins for
-                        <a href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-women/">ladies</a>
-                        & <a href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-men/">gents</a>.
-                    </p>
-                    <h5>Wedding <span class="time">6PM-12AM</span></h5>
-                    <p>
-                        <strong>Indo-western</strong>
-                        <br>
-                        Ladies can flaunt their unconventional sarees,
-                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-lehengas/">lehengas</a>,
-                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-anarkalis/">anarkalis</a>,
-                        dresses and the list
-                        goes on whereas gentlemen can wear any kind of suit or just blazer. If you don't like to wear a
-                        suit/blazer, you can do a <a
-                            href="https://www.pinterest.com/ramswarooppatra/high-neck-jackets-for-men/">high-neck
-                        (band gala) waistcoat & shirt</a> combo.
-                    </p>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+      function attempt() {
+        if (input.value === PASSWORD) {
+          unlock();
+        } else {
+          errorMsg.textContent = 'Incorrect password — please try again.';
+          input.value = '';
+          input.focus();
+        }
+      }
 
-</section>
+      // Already authenticated this session
+      if (sessionStorage.getItem('co_auth') === '1') {
+        gate.remove();
+      } else {
+        document.body.style.overflow = 'hidden'; // prevent scroll behind gate
+        gate.addEventListener('transitionend', () => {
+          document.body.style.overflow = '';
+        }, { once: true });
+        btn.addEventListener('click', attempt);
+        input.addEventListener('keydown', e => { if (e.key === 'Enter') attempt(); });
+        input.focus();
+      }
+    })();
 
-<section id="instagram" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>A picture is worth a thousand words!</h3>
-                <p>Help us capture the moment, tag your photos with the hashtag
-                    <a href="https://instagram.com/explore/tags/ramandantara/" target="_blank">#RamAndAntara</a>
-                </p>
-            </div>
-        </div>
-        <div class="row section-border wp7">
-            <div class="col-md-4 col-md-offset-4">
-                <img src="img/iphone_instagram.jpg">
-            </div>
-        </div>
-    </div>
-</section>
+    // --- Nav: switch to solid when hero leaves viewport ---
+    const nav  = document.getElementById('nav');
+    const hero = document.querySelector('.hero');
 
-<section id="eng-pics" class="section-padding">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">Engagement Pics</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/_RFX2942-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/_RFX2942-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/IMG_3483-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/IMG_3483-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/_RFX2992-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/_RFX2992-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/_RFX3064-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/_RFX3064-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/NGP_4089-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/NGP_4089-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/NGP_4119-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/NGP_4119-sm.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row hidden-lg hidden-md hidden-xs">
-            <div class="col-xs-12 section-border section-padding"></div>
-        </div>
-    </div>
-    <!--<div class="row">
-        <div class="col-md-12">
-            <div class="diamond floating-logo">
-                <img src="img/sketch-logo.png" alt="Sketch Logo">
-                <div class="ring"></div>
-            </div>
-        </div>
-    </div>-->
-</section>
+    const obs = new IntersectionObserver(
+      ([e]) => nav.classList.toggle('scrolled', !e.isIntersecting),
+      { threshold: 0.08 }
+    );
+    obs.observe(hero);
 
-<section id="video-bg" class="hidden-sm hidden-xs">
-    <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/9giqL1H6yRs',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
-    </div>
-    <div id="video-content">
-        <h5>Kolkata</h5>
-        <p>City of joy</p>
-    </div>
-</section>
+    // --- Mobile hamburger menu ---
+    const toggle     = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-<section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>How do I get there?</h3>
-        <p>It's way easier than you think!</p>
-    </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>ITC Fortune Park</h5>
-                            <p>Kona Expressway, Howrah, West Bengal 711403, India</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Mr. Amit Roy</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+91 9412345678</a><br>
-                                <i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a></p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                                map</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    toggle.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
 
-<section class="rsvp text-center" id="rsvp">
+    // Close on any mobile link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you join us on our big day.</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before 1st of November '17</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
-                                                                  required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center content">
-                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Crafted by Ram with lots of <span class="fa fa-heart pulse2"></span> for Antara</p>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
-<script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
-<!-- Google Analytics -->
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-46465113-4', 'auto');
-    ga('send', 'pageview');
-</script>
 </body>
 </html>

@@ -1,0 +1,148 @@
+/* Custom overrides for Soria-inspired design */
+
+/* Body text: +3px for all body/content sections */
+body,
+p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.travel-content p,
+.travel-content ul li,
+#intro .story-content p {
+  font-size: 20px !important;
+}
+
+/* Ensure all text is visible */
+body {
+  color: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+}
+
+p {
+  color: #555;
+}
+
+/* Hero section - no overlay, clean design */
+.hero {
+  background-attachment: fixed;
+}
+
+.hero h1.hero-names {
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation visibility */
+header a {
+  transition: all 0.3s ease;
+}
+
+.fixed header a {
+  text-shadow: none;
+}
+
+/* Section backgrounds for lighter feel */
+section {
+  background: #fff;
+}
+
+section#invitation {
+  background: #fff;
+}
+
+section#registry {
+  background: #fafafa;
+}
+
+section.rsvp {
+  background: #fafafa;
+}
+
+/* Ensure all links are visible */
+a {
+  color: #2c3e50;
+}
+
+a:hover {
+  color: #e8ca6f;
+}
+
+/* Footer text */
+footer p {
+  color: #34495e;
+}
+
+/* Map section */
+#map-content {
+  background: #fff;
+}
+
+#map-content h5 {
+  color: #2c3e50;
+}
+
+#map-content p {
+  color: #34495e;
+}
+
+/* Video section text */
+#video-content h5,
+#video-content p {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Events section */
+.events h3,
+.events h5 {
+  color: #2c3e50;
+}
+
+.events p {
+  color: #34495e;
+}
+
+/* Events: uniform spacing, single details line */
+.events .section-title {
+  margin-bottom: 16px !important;
+}
+
+.events-wedding-heading {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px !important;
+  text-align: center;
+}
+
+.events-details-line {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 20px !important;
+  color: #2c3e50;
+  margin: 0 0 16px 0 !important;
+  text-align: center;
+}
+
+.events-details-line .events-date,
+.events-details-line .events-venue,
+.events-details-line .events-maps-link,
+.events-details-line .events-sep {
+  font-family: inherit !important;
+  font-size: inherit !important;
+}
+
+.events-content > p {
+  margin-top: 0 !important;
+  font-size: 20px !important;
+}
+
+/* Intro section */
+#intro h3 {
+  color: #2c3e50;
+}
+
+#intro p {
+  color: #34495e;
+}

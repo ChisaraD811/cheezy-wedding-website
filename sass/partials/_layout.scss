@@ -3,8 +3,14 @@
 $section-padding: 40px 0;
 
 section.intro, section.features-extra, section.rsvp {
-	background: $section-light;
+	background: #fafafa;
 }
 section.features, section.events, section.blog {
-	background: $section-dark;
+	background: #fff;
+}
+section#invitation {
+	background: #fff;
+}
+section#registry {
+	background: #fafafa;
 }
